@@ -39,4 +39,4 @@ Please fill in this form:
 </body>
 </html>
 <?php
-require 'conection.php';
+require 'connection.php';

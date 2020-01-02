@@ -13,14 +13,15 @@ function check_post(){
     }
 }
 
-require 'conection.php';
+require 'connection.php';
 if (check_post()){
-    echo 'got it';
     $pdo=openConnection();
-    if ($pdo){
-        $sql= "INSERT INTO students (first_name, last_name, username, gender, linkedin, github, email, preferred_language, avatar, video, quote, quote_author";
-        $sql.=" VALUES (".$_POST["first_name"].",".$_POST["last_name"].",".$_POST["username"].",".$_POST["gender"][0].",".$_POST["linkedin"].",".$_POST["github"].",".$_POST["email"].",".$_POST["language"][0].",".$_POST["avatar"].",".$_POST["video"].",".$_POST["quote"].",".$_POST["quote_author"];
-        echo $sql;
+    $sql= "INSERT INTO students (first_name, last_name, username, gender, linkedin, github, email, preferred_language, avatar, video, quote, quote_author)";
+    $sql.=" VALUES (".$_POST["first_name"].",".$_POST["last_name"].",".$_POST["username"].",".$_POST["gender"][0].",".$_POST["linkedin"].",".$_POST["github"].",".$_POST["email"].",".$_POST["language"][0].",".$_POST["avatar"].",".$_POST["video"].",".$_POST["quote"].",".$_POST["quote_author"].");";
+    echo $sql;
+    $pdo->query($sql);
+    echo "YEEEHAAAAW!";
+    if ($pdo!=0){
     }
     else{
         echo "Connection failed!";
