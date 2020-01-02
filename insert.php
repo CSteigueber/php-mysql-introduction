@@ -10,7 +10,7 @@
 Please fill in this form:
 <body>
     <div class =d-flex>
-        <form action="index.php" method="POST">
+        <form action="update.php" method="POST">
         First Name<input class="d-flex flex-row" type="text " name="first_name">
         Last Name<input class="d-flex flex-row" type="text " name="last_name">
         Username<input class="d-flex flex-row" type="text " name="username">
