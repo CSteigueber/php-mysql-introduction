@@ -14,4 +14,4 @@
 </body>
 </html>
 <?php
-require 'conection.php';
+require 'conection.php'; //test
