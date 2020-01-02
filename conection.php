@@ -14,4 +14,3 @@ $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
  // Why we do this here
  return $pdo;
 }
-echo "Howdie partner!";
