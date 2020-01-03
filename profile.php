@@ -26,5 +26,6 @@ echo "</table>";
 <body>
    <button><a href="delete.php?id=<?php echo $_GET['id'];?>">Delete this profile!</a></button> 
    <button><a href="edit.php?id=<?php echo $_GET['id'];?>">Edit this profile!</a></button> 
+   <button><a href="index.html">Go back to the index</a></button>
 </body>
 </html>
