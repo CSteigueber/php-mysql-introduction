@@ -15,7 +15,12 @@ echo "<table>";
 foreach ($results as $value) {
     echo "<tr>";
     for ($i=0; $i<9;$i++){
-        echo "<td>".$value[$i]."</td>";
+        if ($i!=1){
+            echo "<td>".$value[$i]."</td>";
+        }
+        else{
+            echo "<td><a href='profile.php?id=".$value[0]."'>".$value[$i]."</a></td>";
+        }
     }
     echo "</tr>";
 }
