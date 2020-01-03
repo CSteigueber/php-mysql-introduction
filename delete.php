@@ -3,7 +3,6 @@ require 'connection.php';
 $pdo=openConnection();
 $sql="DELETE FROM student WHERE id=".$_GET['id'];
 try {
-    echo $_GET['id'];
     $stmt=$pdo->prepare($sql);
     $stmt->execute();
     echo "profile deleted";
